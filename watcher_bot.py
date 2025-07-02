@@ -1,7 +1,10 @@
+import os
 import datetime
 from langdetect import detect
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
+
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 WARNING_MESSAGE = "⚠️ Повідомлення видалене. На вихідних заборонені повідомлення мовою росії."
 
