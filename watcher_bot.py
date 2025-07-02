@@ -9,7 +9,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 WARNING_MESSAGE = "⚠️ Повідомлення видалене. На вихідних заборонені повідомлення мовою росії."
 
 def is_weekend():
-    return datetime.datetime.today().weekday() >= 5  # 5 = Saturday or Sunday
+    return datetime.datetime.today().weekday() >= 0  # 5 = Saturday or Sunday
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message:
