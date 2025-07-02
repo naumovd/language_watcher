@@ -3,7 +3,6 @@ from langdetect import detect
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-BOT_TOKEN = '7691378301:AAEKM96-3_r7GF1GEP2aB_AQKav74xYIRWs'
 WARNING_MESSAGE = "⚠️ Повідомлення видалене. На вихідних заборонені повідомлення мовою росії."
 
 def is_weekend():
